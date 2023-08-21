@@ -16,13 +16,15 @@ const a = [
         title: "Pokedex-app",
         subtitle: "Pokedex-app",
         img: "/assets/pokedex.webp",
-        url: "https://github.com/fercal10/YoutubeDownload",
+        page: "https://pokedex-app-sage.vercel.app/",
+        url: "https://github.com/fercal10/Pokedex-app",
         skills: ["Next", "TypeScript", "Tailwind"],
     },
     {
         title: "KanbarBoard",
         subtitle: "KanbarBoard",
         img: "/assets/kanbar.webp",
+        page: "https://kanba-board.vercel.app/",
         url: "https://github.com/fercal10//KanbaBoard",
         skills: ["Angular", "TypeScript"],
     },
@@ -30,6 +32,7 @@ const a = [
         title: "Markdown-editor",
         subtitle: "Markdown-editor",
         img: "/assets/markdown.webp",
+        page: "https://markdown-editor-ecru-eight.vercel.app/",
         url: "https://github.com/fercal10/markdown-edit",
         skills: ["React", "JavaScript", "Tailwind"],
     },
@@ -37,6 +40,7 @@ const a = [
         title: "YoutubeDownload",
         subtitle: "YoutubeDownload",
         img: "/assets/Youtube.webp",
+        page: "https://youtube-download-sigma.vercel.app/",
         url: "https://github.com/fercal10/YoutubeDownload",
         skills: ["JavaScript", "Next", "Tailwind"],
     },
@@ -44,6 +48,7 @@ const a = [
 
 export default function Projects() {
     const { theme } = useContext(ThemaContext) as { theme: string[] };
+    const router = useRouter();
     // const router = useRouter()
 
     // const [selectedId, setSelectedId] = useState<number | null>(null)
@@ -78,6 +83,7 @@ export default function Projects() {
                     <motion.div className=''>
                         <Card
                             hoverable
+                            onClick={()=>router.push(item.page)}
                             className=' hover:scale-105  duration-300 ease-in'
                             cover={
                                 <Image
