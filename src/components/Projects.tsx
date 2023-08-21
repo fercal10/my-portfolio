@@ -81,6 +81,7 @@ export default function Projects() {
                             className=' hover:scale-105  duration-300 ease-in'
                             cover={
                                 <Image
+                                loading='lazy'
                                     width={300}
                                     height={200}
                                     alt={item.title}
