@@ -21,10 +21,10 @@ export function Navbar() {
   return (
     <main className=" flex justify-center sticky top-0  z-50 items-center w-full  backdrop-blur-md  text-black  text-lg h-[10vh] ">
       <ul className=" gap-5  hidden md:flex">
+        <li>{theme[0] == "en" ? "About" : "Sobre me"} </li>
         <li>{theme[0] == "en" ? "Skills" : "Habilidades"} </li>
         <li>{theme[0] == "en" ? "Projects" : "Proyectos"} </li>
-        <li>{theme[0] == "en" ? "About" : "Sobre me"} </li>
-        <li>{theme[0] == "en" ? "Contact" : "Contacto"} </li>
+        {/* <li>{theme[0] == "en" ? "Contact" : "Contacto"} </li> */}
 
       </ul>
 
