@@ -16,8 +16,8 @@ export function About() {
                 <div className=" bg-slate-700/20  h-min max-w-xl py-8 px-1  backdrop-blur-3xl rounded-md  ">
 
                     <p className=" font-mono ">
-                        {theme[0] == "en" ? "  Full Stack developer with development experience. I have Flutter, .NET, Angular, and React experience, as well as knowledge of technologies like Git, Docker, SQL Server, and MongoDB. I am able to work independently and as part of a team, and have a strong work ethic. Currently finishing my degree in Computer Engineering " 
-                        : " Desarrollador Full Stack con experiencia en el desarrollo. Tengo experiencia Flutter, .NET, Spring, Angular y React, así como conocimientos de las tecnologías como Git, Docker, SQL Server y MongoDB. Soy capaz de trabajar de forma independiente y como parte de un equipo, y tengo una sólida ética de trabajo., Actualmente acabando la carrera de ingeniería en computación "}
+                        {theme[0] == "en" ? "  Full Stack developer with one year of experience. I have Flutter, .NET, Angular, and React experience, as well as knowledge of technologies like Git, Docker, SQL Server, and MongoDB. I am able to work independently and as part of a team, and have a strong work ethic. Currently finishing my degree in Computer Engineering " 
+                        : " Desarrollador Full Stack con un año de experiencia. Tengo experiencia Flutter, .NET, Spring, Angular y React, así como conocimientos de las tecnologías como Git, Docker, SQL Server y MongoDB. Soy capaz de trabajar de forma independiente y como parte de un equipo, y tengo una sólida ética de trabajo., Actualmente acabando la carrera de ingeniería en computación "}
                     </p>
                 </div>
 
