@@ -1,9 +1,10 @@
 "use client"
-import { EditOutlined, EllipsisOutlined, GithubOutlined, SendOutlined, SettingOutlined } from '@ant-design/icons';
-import { Avatar, Button, Card } from 'antd';
-import { AnimatePresence, motion, } from 'framer-motion';
-import { usePathname, useRouter } from 'next/navigation';
-import { useContext, useEffect, useState } from 'react';
+
+import {  GithubOutlined, } from '@ant-design/icons';
+import { Card } from 'antd';
+import {  motion, } from 'framer-motion';
+import {  useRouter } from 'next/navigation';
+import { useContext,  } from 'react';
 import { Tags } from './Tag';
 import Image from 'next/image';
 import { ThemaContext } from './hook/usexContext';

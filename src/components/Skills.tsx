@@ -72,7 +72,7 @@ export default function Skills() {
 
         </div>
         {/* <img className="absolute w-full top-[48px] rotate-180 " src="/assets/waves/testimonial-wave1.svg" alt="" /> */}
-        <Image loading="lazy" className="absolute w-full top-10 rotate-180   " src="/assets/waves/testimonial-wave6.svg" alt="" />
+        <Image width={1080} height={200} loading="lazy" className="absolute w-full top-10 rotate-180   " src="/assets/waves/testimonial-wave6.svg" alt="" />
         {/* <img className="absolute w-full top-[48px] rotate-180 " src="/assets/waves/testimonial-wave3.svg" alt="" /> */}
 
     </div>

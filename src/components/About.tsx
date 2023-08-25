@@ -22,8 +22,8 @@ export function About() {
                 </div>
 
             </div>
-            <Image loading="lazy" className="absolute w-full " src="/assets/waves/hero-wave1.svg" alt="" />
-            <Image loading="lazy" className="absolute w-full top-6" src="/assets/waves/hero-wave2.svg" alt="" />
+            <Image width={1080}  height={200} loading="lazy" className="absolute w-full " src="/assets/waves/hero-wave1.svg" alt="" />
+            <Image  width={1080} height={200} loading="lazy" className="absolute w-full top-6" src="/assets/waves/hero-wave2.svg" alt="" />
 
         </div>
     );

@@ -1,7 +1,7 @@
-
 "use client"
+
 import { Switch, Space } from 'antd';
-import { Dispatch, SetStateAction, useContext } from 'react';
+import { Dispatch, SetStateAction, useContext, useState } from 'react';
 import { ThemaContext } from './hook/usexContext';
 
 export function Navbar() {
@@ -18,6 +18,12 @@ export function Navbar() {
     setTheme([lag, theme[1]]);
   }
 
+  const [isChecked, setIsChecked] = useState(false)
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked)
+  }
+
   return (
     <main className=" flex justify-center sticky top-0  z-50 items-center w-full  backdrop-blur-md  text-black  text-lg h-[10vh] ">
       <ul className=" gap-5  hidden md:flex">
@@ -29,6 +35,7 @@ export function Navbar() {
       </ul>
 
       <div className=' flex gap-3 mx-5 items-center justify-center absolute right-16 '>
+
 
         <Switch
           onChange={(e) => changeLanguage(e)}
@@ -45,11 +52,6 @@ export function Navbar() {
           checkedChildren={"☀️"}
         />
       </div>
-
-
-
-
-
 
     </main>
   )
